@@ -1879,6 +1879,56 @@
         inset: auto 0 0 auto;
       }
     </style>
+    <style>
+      .ticker-banner {
+        width: 97vw;
+        overflow: hidden;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 0;
+        position: relative;
+      }
+
+      .ticker-wrap {
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .ticker {
+        display: flex;
+        width: fit-content;
+        animation: ticker-scroll 210s linear infinite;
+        white-space: nowrap;
+      }
+
+      .ticker span {
+        display: inline-block;
+        padding: 0 5px;
+        font-size: 20px;
+        font-family: "Contrail One", cursive;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      @keyframes ticker-scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-33.333%);
+        }
+      }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const tickers = document.querySelectorAll('.ticker');
+        tickers.forEach(ticker => {
+          const originalText = ticker.innerHTML;
+          // Create many copies to fill the screen and ensure seamless loop
+          ticker.innerHTML = originalText + originalText + originalText + originalText + originalText;
+        });
+      });
+    </script>
   </head>
   <body
     class="home page-template page-template-elementor_canvas page page-id-78 wp-custom-logo elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-78 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit"
@@ -2505,75 +2555,7 @@
             <div class="ticker-banner">
               <div class="ticker-wrap">
                 <div class="ticker">
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
+                  <span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span><span>$FUCKY CTO</span>
                 </div>
               </div>
             </div>
@@ -2601,9 +2583,6 @@
             <div class="ticker-banner">
               <div class="ticker-wrap">
                 <div class="ticker">
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
-                  <span>$FUCKY CTO</span>
                   <span>$FUCKY CTO</span>
                   <span>$FUCKY CTO</span>
                   <span>$FUCKY CTO</span>
@@ -2841,12 +2820,12 @@
                 >
                   <div class="elementor-widget-container">
                     <p class="elementor-heading-title elementor-size-default">
-                      Explore
+                    
                       <span class="buckyHighlight">$FUCKY</span>
-                      today and embrathe the legend of
+                      is back in the game - 
                       <span class="buckyHighlight"
-                        >Tholana's most unexpected hero</span
-                      >.
+                        >this will be an epic reincarnation.</span
+                      >
                     </p>
                   </div>
                 </div>
@@ -3501,7 +3480,7 @@
           >
             <div class="elementor-widget-container">
               Join The <br />
-              <span class="buckyHighlight">Quack House</span>
+              <span class="buckyHighlight">CTO  House</span>
             </div>
           </div>
           <div
@@ -3723,7 +3702,7 @@
           >
             <div class="elementor-widget-container">
               <p class="elementor-heading-title elementor-size-default">
-                QUACKED OUT COMICS - CA -
+                FUCKY OUT COMICS - CA -
                 1Kffk8ZB3pper23BLKai3TCDcWq1cw7Cd2T3CTLpump
               </p>
             </div>

@@ -82,8 +82,6 @@
 .elementor-element {
   --widgets-spacing: 20px 20px;
 }
- {
-}
 h1.entry-title {
   display: var(--page-title-display);
 }
@@ -168,7 +166,7 @@ h1.entry-title {
 }
 
 .ticker-banner {
-  width: 900vw;
+  width: 97vw;
   overflow: hidden;
   background-color: #000; /* Adjust background color as needed */
   color: #fff; /* Adjust text color as needed */
@@ -183,23 +181,26 @@ h1.entry-title {
 
 .ticker {
   display: flex;
-  width: 200%; /* Ensure the ticker is wide enough to scroll continuously */
-  animation: ticker-move 120s linear infinite;
+  width: fit-content;
+  animation: ticker-move 210s linear infinite;
+  white-space: nowrap; /* Prevent line breaks */
 }
 
 .ticker span {
   display: inline-block;
-  padding: 0.5rem; /* Adjust spacing between words as needed */
+  padding: 0 5px; /* Adjust spacing between words as needed */
   font-size: 20px; /* Adjust font size as needed */
   font-family: "Contrail One", cursive; /* Apply the Contrail One font */
+  white-space: nowrap; /* Prevent text wrapping */
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 @keyframes ticker-move {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-33.333%);
   }
 } /* End custom CSS */
 /*

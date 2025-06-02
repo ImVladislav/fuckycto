@@ -2856,7 +2856,7 @@ body.rtl .e-con {
 }
 
 .elementor-element .elementor-widget-container {
-  transition: background 1s, border 1s, border-radius 1s, box-shadow 1s, transform 1s;
+  transition: background 3s, border 3s, border-radius 3s, box-shadow 3s, transform 3s;
 
 }
 
