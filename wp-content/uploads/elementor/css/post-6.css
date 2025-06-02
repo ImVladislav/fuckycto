@@ -168,7 +168,7 @@ h1.entry-title {
 }
 
 .ticker-banner {
-  width: 100vw;
+  width: 900vw;
   overflow: hidden;
   background-color: #000; /* Adjust background color as needed */
   color: #fff; /* Adjust text color as needed */
@@ -184,7 +184,7 @@ h1.entry-title {
 .ticker {
   display: flex;
   width: 200%; /* Ensure the ticker is wide enough to scroll continuously */
-  animation: ticker-move 20s linear infinite;
+  animation: ticker-move 120s linear infinite;
 }
 
 .ticker span {
